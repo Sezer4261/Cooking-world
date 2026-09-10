@@ -1,0 +1,317 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #d35400;
+  position: relative;
+  z-index: 1000;
+}
+
+header a img {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #d35400;
+  border-bottom: 2px solid #d35400;
+}
+
+#burgerBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#burgerBtn span {
+  width: 100%;
+  height: 3px;
+  background-color: #d35400;
+  border-radius: 2px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.rezepte-vorschau h2 {
+  margin-bottom: 20px;
+  color: #d35400;
+  text-align: center;
+}
+
+.rezepte-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.rezept {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.rezept img {
+  width: 100%;
+  height: auto;
+}
+
+.rezept h3 {
+  padding: 10px;
+}
+
+.rezept:hover {
+  transform: scale(1.02);
+}
+
+.highlight-bereich {
+  margin: 40px 0;
+  background-color: #fef6f0;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.highlight-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.highlight-content img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.highlight-text {
+  flex: 1;
+}
+
+.highlight-text h2 {
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+.highlight-text p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d35400;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b94300;
+}
+
+#kontaktbereich {
+  max-width: 600px;
+  margin: 50px auto 60px;
+  padding: 30px 25px;
+  background-color: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(211, 84, 0, 0.2);
+}
+
+#kontaktbereich h2 {
+  color: #d35400;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#kontaktbereich label {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #4a4a4a;
+}
+
+#kontaktbereich input,
+#kontaktbereich textarea {
+  width: 100%;
+  padding: 14px 15px;
+  margin-top: 8px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+#kontaktbereich input:focus,
+#kontaktbereich textarea:focus {
+  border-color: #d35400;
+  outline: none;
+}
+
+.input-fehler {
+  border-color: #c0392b !important;
+  background-color: #fdecea !important;
+}
+
+#fehlerText {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #c0392b;
+  text-align: left;
+}
+
+#kontaktbereich button {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #d35400;
+  color: white;
+  padding: 16px 0;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  transition: background-color 0.3s ease;
+}
+
+#kontaktbereich button:hover {
+  background-color: #b94300;
+}
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #d35400;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #b94300;
+  text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1001;
+  }
+
+  #burgerBtn {
+    display: flex;
+  }
+
+  .highlight-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #kontaktbereich {
+    margin: 30px 15px 40px;
+    padding: 20px 15px;
+  }
+}

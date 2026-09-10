@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kochwelt - Rezepte</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="img/logo.png" alt="Kochwelt Logo" width="120" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="rezepte.html" class="active">Rezepte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+    <button id="burgerBtn" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <h1>Rezepte</h1>
+
+    <label for="rezeptAuswahl">Wähle ein Rezept:</label>
+    <select id="rezeptAuswahl">
+      <option value="0">Spaghetti Carbonara</option>
+      <option value="1">Wok</option>
+      <option value="2">Salat</option>
+    </select>
+
+    <p>Für <input type="number" id="personenInput" value="2" min="1" /> Personen</p>
+
+    <ul id="zutatenListe"></ul>
+  </main>
+
+<footer>
+  <p>&copy; 2025 Kochwelt – Alle Rechte vorbehalten.</p>
+  <p>
+    <a href="impressum.html">Impressum</a> |
+    <a href="kontakt.html">Kontakt</a>
+  </p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kochwelt - Startseite</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="img/logo.png" alt="Kochwelt Logo" width="120" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Startseite</a></li>
+        <li><a href="rezepte.html">Rezepte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+    <button id="burgerBtn" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Willkommen in der Kochwelt!</h1>
+      <p>Entdecke neue Rezepte, probiere kreative Ideen aus und teile deine Lieblingsgerichte mit anderen Hobbyköchen!</p>
+    </section>
+
+    <section class="rezepte-vorschau">
+      <h2>Unsere beliebtesten Rezepte</h2>
+      <div class="rezepte-grid">
+        <article class="rezept">
+          <img src="img/croissant.jpg" alt="Croissant" />
+          <h3>Croissant</h3>
+        </article>
+        <article class="rezept">
+          <img src="img/salad.jpg" alt="Salat" />
+          <h3>Salat</h3>
+        </article>
+        <article class="rezept">
+          <img src="img/wok.jpg" alt="Wok" />
+          <h3>Wok</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="highlight-bereich">
+      <div class="highlight-content">
+        <img src="img/bbq.jpg" alt="BBQ Bild" />
+        <div class="highlight-text">
+          <h2>BBQ-Spezial</h2>
+          <p>Entdecke unsere besten Grillrezepte für dein nächstes BBQ-Abenteuer. Von saftigen Steaks bis zu veganen Leckerbissen ist alles dabei.</p>
+          <a href="rezepte.html" class="btn">Jetzt entdecken</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <p>&copy; 2025 Kochwelt – Alle Rechte vorbehalten.</p>
+  <p>
+    <a href="impressum.html">Impressum</a> |
+    <a href="kontakt.html">Kontakt</a>
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
